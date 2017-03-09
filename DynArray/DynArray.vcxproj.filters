@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="DynArray.cpp">
+    <ClCompile Include="main.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DynArray.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
