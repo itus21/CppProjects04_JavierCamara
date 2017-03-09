@@ -2,4 +2,6 @@
 
 void main() {
 
+	DynArray PushArray;
+	PushArray.push(2);
 }

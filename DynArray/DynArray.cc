@@ -49,6 +49,23 @@ void DynArray::assign(size_t n, const int & val)
 void DynArray::push(const int & val)
 {
 	
+	if (m_size == m_capacity)
+	{
+		// Se redimensiona la array
+		m_capacity += m_size / 2;
+		int *tmp = new int[m_capacity];
+
+		//Pasar los valores a la nueva array
+		for (int i = 0; i < m_size; i++)
+		{
+			tmp[i] = m_data[i];
+		}
+		delete[] m_data;
+		m_data = tmp;
+		
+	}
+	m_data[m_size] = val;
+	m_size++;
 }
 
 void DynArray::pop(void)
